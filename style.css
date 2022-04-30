@@ -1,0 +1,47 @@
+//Special thanks 
+
+html, body{
+  height: 100vh;
+  background-color: aquamarine;  
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.cotainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: aquamarine;
+}
+
+.random-beer{
+  margin-top: 150px;
+  color: wheat;
+  font-size: 30px;
+}
+
+.description{
+  max-width: 600px;
+  color: #f7ecb7;
+  font-size: 20px;
+}
+
+.beer-button{
+  display: inline-flex;
+}
+
+.beer-button a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: aquamarine;
+  box-shadow: -8px -8px 12px 0 grba(0, 0, 0, 0.3),
+              12px 12px 16px rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  transition: 0.5s;
+
+  
+}
