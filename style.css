@@ -1,30 +1,38 @@
-//Special thanks 
+/* Special thanks  */
 
 html, body{
   height: 100vh;
-  background-color: aquamarine;  
+  background-color: aquamarine; /*#FEBC58*/ 
   font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.cotainer{
+.container{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    -ms-flex-item-align: inherit;
     align-items: center;
     text-align: center;
-    background: aquamarine;
+    background: aquamarine; /*#FEBC58*/ 
 }
 
 .random-beer{
   margin-top: 150px;
-  color: wheat;
+  color: rgb(36, 35, 35);
   font-size: 30px;
 }
 
+.box{
+ display: flex;
+ flex-direction: row;
+
+}
+
 .description{
+  
   max-width: 600px;
-  color: #f7ecb7;
+  color: rgb(36, 35, 35); /*#f7ecb7*/ 
   font-size: 20px;
 }
 
@@ -35,13 +43,29 @@ html, body{
 .beer-button a{
   display: inline-block;
   text-decoration: none;
-  background-color: aquamarine;
+  background-color: aquamarine; /*#FEBC58*/
   box-shadow: -8px -8px 12px 0 grba(0, 0, 0, 0.3),
-              12px 12px 16px rgba(255, 255, 255, 0.25);
+              12px 12px 16px 0 rgba(255, 255, 255, 0.25);
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   transition: 0.5s;
 
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beer-button a:hover{
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), 
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+.beer-button .fab{
+  padding-left: 5px;
+}
+
+.beer-img{
+  height: 220px;
+  margin: 10px;
 }
